@@ -7,13 +7,12 @@ int		main(void)
 	int y;
 	int res;
 	res = 0;
-	//scanf("%d %d", &x, &y);
+	scanf("%d %d", &x, &y);
 	x = 10;
 	y = 10;
-//	char	arr[x * y];
-//	for (int i = 0; i < x; i++)
-//		scanf("%s", &arr[i][0]);
-	char *arr = "BWBWBWBWBWWBWBWBWBWBBWBWBWBWBWWBWBWBWBWBBWBWBWBWBWWBWBWBWBWBBWBWBBWWBBWBWBWBWBWBBWBWBWBWBWWBWBWBWBWB";
+	char	arr[x * y];
+	for (int i = 0; i < x; i++)
+		scanf("%s", &arr[i][0]);
 	printf("%s", arr);
 
 	for (int i = 0; i + 7 < x; i++)
@@ -23,6 +22,8 @@ int		main(void)
 		{
 			for (int k = 0; k < 8; k++)
 				for(int l = 0; l < 8; l++)
+					if (k % 2 == 0 && ((l % 2 == 0) && *(arr + (i + k)*)))
+
 		}
 
 
